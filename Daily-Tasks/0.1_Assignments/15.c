@@ -1,20 +1,24 @@
 #include<stdio.h>
 
-int main(){
-    getArray();
-    displayArray(getArray[]);
-    return 0;
-}
-int get array(){
-    int limit,array[20];
-    printf("Enter limit of array");
-    scanf("%d",&limit);
-    printf("Enter value of array");
-    for(i=0;i<limit;i+){
-        scanf("%d",&array[i])
+void getarray(int array[], int size){
+    printf("Enter value of array:\n");
+    for(int i=0;i<size;i++){
+        scanf("%d",&array[i]);
     }
-    return array[];
+    printf("\n");
+
 }
-void displayArray(){
-    
+void displayArray(int array[],int size){
+    printf("Array is \n");
+    for(int i=0;i<size;i++){
+        printf("%d\t",array[i]);
+}
+}
+int main(){
+    int array[20],size;
+    printf("Enter size of the array");
+    scanf("%d",&size);
+    getarray(array,size);
+    displayArray(array,size);
+
 }
