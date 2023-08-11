@@ -5,14 +5,16 @@ int main(){
 
 printf("Enter row: ");
 scanf("%d",&row);
-for(i=1;i<=5;i++){5
-    for(j=1;j<=(6-i)*2;j++){
+for(i=1;i<=row;i++){
+    for(j=1;j<=i*4;j++){
         printf("*  ");
     }
     printf("\n");
 
-    
-    for(k=1;k<=i;k++){
+    if(i==row){
+        break;
+    }
+    for(k=1;k<=3*i;k++){
         
         printf("\n*\n");
         
